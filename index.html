@@ -8,6 +8,17 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <meta
+      property="og:title"
+      content="Johnny Paulsen – Developer & Product Thinker"
+    />
+    <meta
+      property="og:description"
+      content="Personal site of Johnny Paulsen. Projects, experience, interests, and what I'm working on."
+    />
+    <meta property="og:image" content="assets/img/profileimage.jpeg" />
+    <meta property="og:url" content="https://johnnypaulsen.com" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Ashton John Paulsen - Resume</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -28,8 +39,22 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="assets/css/styles.css" rel="stylesheet" />
+    <!-- AOS.js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body id="page-top">
+    <div
+      id="theme-toggle"
+      style="position: fixed; top: 1rem; right: 1rem; z-index: 1000"
+    >
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-checkbox" />
+        <span class="slider">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </span>
+      </label>
+    </div>
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -79,7 +104,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#service">Service</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
         </ul>
       </div>
@@ -124,12 +149,6 @@
             ></a>
             <a
               class="social-icon"
-              href="https://www.facebook.com/johnny.paulsen.75"
-              target="blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="social-icon"
               href="assets/img/Resume-Fall2024.pdf"
               download="johnny-paulsen-resume"
               ><i class="fa fa-download"></i
@@ -144,157 +163,111 @@
           <h2 class="mb-5">
             EXPERIENCE - A Personalized Journey Beyond My Resume
           </h2>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Mobile Developer</h3>
-              <div class="subheading mb-3">VEST EAP</div>
-              <p>
-                Last summer, I had a fantastic experience working at VEST as a
-                React Native mobile developer. VEST is a mental health and
-                resiliency training company and a subsidiary of Lecticon, where
-                I had worked previously. My time at VEST was incredibly
-                rewarding. I developed a new feature that allows users to track
-                various areas of their lives, driving daily engagement.
-                Additionally, I integrated an AI assistant into the app using
-                OpenAI's APIs.
-              </p>
+          <div class="timeline">
+            <div
+              class="timeline-container left"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="timeline-content">
+                <h3>Swimming Instructor</h3>
+                <h5>Bowler Swim School</h5>
+                <p>June 2016 – August 2018</p>
+                <p>
+                  Taught 20+ children ages 2–14 to swim; discovered a passion
+                  for instructing and sharing skills with others.
+                </p>
+              </div>
             </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">May 2024 - Present</span>
+            <div
+              class="timeline-container right"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="timeline-content">
+                <h3>Piano Teacher</h3>
+                <h5>Piano Box</h5>
+                <p>June 2017 – August 2018</p>
+                <p>
+                  Refined personalized instruction styles teaching aspiring
+                  pianists at a private studio.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Junior Developer</h3>
-              <div class="subheading mb-3">Missionary Training Center</div>
-              <p>
-                I returned to the MTC as a part-time Junior Developer on a
-                consulting team specializing in bringing desired applications to
-                life through Microsoft's Power Apps and Power Automate. It was
-                an exciting experience, spending my days learning new technology
-                while assisting people along the way. Microsoft's Power Platform
-                tools truly are amazing, and working with them made the process
-                even more rewarding.
-              </p>
+            <div
+              class="timeline-container left"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="timeline-content">
+                <h3>Marshallese Language Instructor</h3>
+                <h5>Missionary Training Center</h5>
+                <p>October 2020 – March 2021</p>
+                <p>
+                  Applied Marshallese fluency to teach missionaries; balanced
+                  challenge and fulfillment of language education.
+                </p>
+              </div>
             </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">September 2023 - May 2024</span>
+            <div
+              class="timeline-container right"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="timeline-content">
+                <h3>Junior Account Executive</h3>
+                <h5>Lecticon</h5>
+                <p>March 2021 – September 2022</p>
+                <p>
+                  Managed sales for On Q Safety training product for first
+                  responders; built deep appreciation for client engagement.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Implementation Consultant</h3>
-              <div class="subheading mb-3">FAST Enterprises</div>
-              <p>
-                My first step into the real world felt like a true calling when
-                I started my role as an Implementation Consultant at FAST. This
-                position brought all my passions together into one job, allowing
-                me to leverage the hard skills I gained from my degree, apply my
-                instructing abilities, and fulfill my desire to work directly
-                with clients. Throughout the summer, I had the opportunity to
-                put my C# and SQL skills to good use by developing business
-                objects that automated the process of sending letters to
-                individuals meeting specific criteria outlined in my SQL
-                queries. One highlight of my summer was working on the FAQ page
-                for Montana UI.
-              </p>
+            <div
+              class="timeline-container left"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="timeline-content">
+                <h3>Implementation Consultant</h3>
+                <h5>FAST Enterprises</h5>
+                <p>March 2023 – September 2023</p>
+                <p>
+                  Developed business logic in C# and SQL; automated
+                  communications and contributed to the Montana UI FAQ.
+                </p>
+              </div>
             </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">March 2023 - September 2023</span>
+            <div
+              class="timeline-container right"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="timeline-content">
+                <h3>Junior Developer</h3>
+                <h5>Missionary Training Center</h5>
+                <p>September 2023 – May 2024</p>
+                <p>
+                  Developed Power Apps & Automations on Microsoft Power Platform
+                  to streamline internal tools and processes.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Junior Account Executive</h3>
-              <div class="subheading mb-3">Lecticon</div>
-              <p>
-                Lecticon is a prominent learning and development company that
-                delivers essential training to numerous businesses. During my
-                tenure, I was part of the On Q Safety team, which specialized in
-                offering online driver safety training for first responders. My
-                main responsibility as a salesman and account manager presented
-                a unique set of challenges. Nevertheless, this role deepened my
-                passion for direct client interaction and engagement.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">March 2021 - September 2022</span>
-            </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Marshallese Language Instructor</h3>
-              <div class="subheading mb-3">Missionary Training Center</div>
-              <p>
-                After dedicating two years to volunteer missionary work for my
-                church, I felt a strong desire to return to teaching, but with a
-                focus on language instruction. During my missionary service, I
-                acquired proficiency in the Marshallese language, and my role at
-                the MTC provided an opportunity to both maintain my Marshallese
-                language skills and share my knowledge with others. Teaching a
-                language proved to be a challenging endeavor, unlike anything I
-                had taught before, yet the difficulty of it made the experience
-                all the more rewarding. After approximately five months, I made
-                the decision to transition to a new role that better aligned
-                with my long-term career aspirations.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">October 2020 – March 2021</span>
-            </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Piano Teacher</h3>
-              <div class="subheading mb-3">Piano Box</div>
-              <p>
-                I embarked on my piano journey at the age of 10 and remained
-                under the tutelage of the same piano teacher for a remarkable 8
-                years. Eventually, I had the privilege of joining her brand new
-                studio as a part-time instructor. Teaching young aspiring
-                pianists allowed me to refine my teaching approach, tailoring it
-                to accommodate each student's unique learning style and pace.
-                This experience was invaluable in my development as a teacher.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">June 2017 – August 2018</span>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Swimming Instructor</h3>
-              <div class="subheading mb-3">Bowler Swim School</div>
-              <p>
-                I had the pleasure of teaching over 20 kids, ranging in age from
-                2 to 14, how to swim. This job was incredibly enjoyable and it
-                was where my passion for instructing truly blossomed. Swimming
-                has always held a special place in my heart, and I firmly
-                believe that if you're passionate about something, you shouldn't
-                keep it to yourself; instead, share that passion with others.
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">June 2016 – August 2018</span>
+            <div
+              class="timeline-container left"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
+              <div class="timeline-content">
+                <h3>Mobile Developer</h3>
+                <h5>VEST EAP</h5>
+                <p>May 2024 – Present</p>
+                <p>
+                  Built wellness-tracking features and integrated an
+                  OpenAI-based assistant to improve user mental health support.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -414,59 +387,98 @@
       <section class="resume-section" id="interests">
         <div class="resume-section-content">
           <h2 class="mb-5">Interests</h2>
-          <p>
-            Outside of my commitments to school and work, my top priority is my
-            family. Spending quality time with my wife, Elyse, brings me immense
-            joy. Together, we share several hobbies, including skiing, hiking,
-            golfing, and camping.
-          </p>
-          <img
-            src="assets/img/IMG_3712.jpeg"
-            alt="My wife and I atop mount timpanogos"
-            style="padding-bottom: 1em"
-          />
-          <p class="mb-0">
-            When I'm not enjoying the outdoors, I have a strong passion for
-            watching movies and television shows. Additionally, I take on the
-            role of the cook in my household. Combining these interests, I've
-            embarked on a project to create a virtual pantry. This pantry allows
-            me to conveniently manage all my ingredients and, using an API,
-            suggests recipes based on what's available in my inventory.
-          </p>
+          <div data-aos="fade-up">
+            <h4>🏕️ Outdoor Adventures</h4>
+            <p>
+              My wife Elyse and I love making the most of Utah’s natural
+              beauty—skiing in the winter, hiking Mount Timpanogos in the
+              spring, and camping wherever we find the time. In 2024 we hiked
+              the Grand Canyon rim-to-rim.
+            </p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h4>⛳ Golf Obsession</h4>
+            <p>
+              I’ve been golfing almost my whole life, and I’m always looking to
+              improve my game. Whether it’s a quick nine holes or a full 18, I
+              love the challenge of golf. I hope to become a scratch golfer one
+              day.
+            </p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h4>🎬 Entertainment & Storytelling</h4>
+            <p>
+              When it’s time to unwind, I dive into movies and shows.I’m
+              fascinated by stories that mix clever writing with emotional
+              depth. I may or may not quote movies too often.
+            </p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h4>👨‍🍳 Culinary Experiments</h4>
+            <p>
+              At home, I’m the cook—and proud of it. Cooking has become one of
+              my favorite creative outlets.I have even built a family recipe app
+              that allows my family to add all of their favorite recipes.
+            </p>
+          </div>
+
+          <div data-aos="fade-up">
+            <h4>💻 Side Project: Virtual Pantry</h4>
+            <p>
+              Combining my love for food and tech, I built a React-based virtual
+              pantry that helps manage our ingredients and suggest recipes. It
+              uses the Spoonacular API.
+            </p>
+          </div>
+          <div data-aos="fade-up">
+            <img
+              src="assets/img/IMG_3712.jpeg"
+              alt="My wife and I atop mount timpanogos"
+              style="max-width: 100%; height: auto; padding-bottom: 1em"
+            />
+          </div>
         </div>
       </section>
       <hr class="m-0" />
-
-      <!-- Awards-->
-      <section class="resume-section" id="service">
+      <!-- Projects-->
+      <section class="resume-section" id="projects">
         <div class="resume-section-content">
-          <h2 class="mb-5">Service</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Volunteer Representative</h3>
-              <div class="subheading mb-3">
-                The Church of Jesus Christ of Latter-Day Saints
-              </div>
-              <ul>
-                <li>
-                  Practiced listening and being accepting of other’s personal
-                  views.
-                </li>
-                <li>
-                  Trained others in how to see opportunities to serve, manage
-                  time, and strengthen efforts.
-                </li>
-                <li>
-                  Increased capacity to love and serve others from all walks of
-                  life.
-                </li>
-              </ul>
+          <h2 class="mb-5">Featured Projects</h2>
+
+          <div class="mb-5" data-aos="fade-up">
+            <h3 class="mb-0">Compli - Warranty Management System</h3>
+            <div class="subheading mb-3">Next.js • Supabase • OpenAI API</div>
+            <p>
+              Currently developing a software product that allows facility
+              managers to upload warranties, track compliance, and generate
+              automated maintenance reminders and claims. Designed for
+              facilities teams.
+            </p>
+          </div>
+
+          <div class="mb-5" data-aos="fade-up">
+            <h3 class="mb-0">Virtual Pantry</h3>
+            <div class="subheading mb-3">
+              React Native • Spoonacular API • Personal Use
             </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2018 – August 2020</span>
-            </div>
+            <p>
+              A mobile app that recommends recipes based on what's already in
+              your pantry. Built to reduce food waste and streamline cooking
+              decisions. Users can search, filter, and save favorite dishes.
+            </p>
+          </div>
+
+          <div class="mb-5" data-aos="fade-up">
+            <h3 class="mb-0">Family Recipe App</h3>
+            <div class="subheading mb-3">SwiftUI • iOS</div>
+            <p>
+              Created a mobile app to digitize and share family recipes. Each
+              family member can contribute and tag favorites. Includes photo
+              uploads and step-by-step instructions.
+            </p>
           </div>
         </div>
       </section>
@@ -475,5 +487,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+    <script>
+      const checkbox = document.getElementById("theme-checkbox");
+      const storedTheme = localStorage.getItem("theme");
+
+      if (storedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        checkbox.checked = true;
+      }
+
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode");
+        const theme = document.body.classList.contains("dark-mode")
+          ? "dark"
+          : "light";
+        localStorage.setItem("theme", theme);
+      });
+    </script>
   </body>
 </html>
