@@ -11968,3 +11968,46 @@ section.resume-section .resume-section-content {
 .theme-switch input:not(:checked) + .slider .fa-moon {
   opacity: 0.3;
 }
+
+/* mobile specific padding */
+@media (max-width: 576px) {
+  .resume-section {
+    padding: 2rem 1rem;
+  }
+
+  .resume-section-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .resume-section-content p,
+  .resume-section-content li {
+    font-size: 0.95rem;
+  }
+}
+
+/* mobile fix for timeline */
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-container.left,
+  .timeline-container.right {
+    left: 0;
+  }
+
+  .timeline-container::after {
+    left: 0px;
+  }
+
+  .timeline-content {
+    padding: 15px 20px;
+  }
+}
